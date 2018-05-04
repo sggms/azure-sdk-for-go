@@ -16,6 +16,7 @@ package storage
 
 import (
 	"bytes"
+	"context"
 	"encoding/xml"
 	"fmt"
 	"io"
@@ -85,8 +86,8 @@ type BlockResponse struct {
 // See CreateBlockBlobFromReader for more info on creating blobs.
 //
 // See https://docs.microsoft.com/en-us/rest/api/storageservices/fileservices/Put-Blob
-func (b *Blob) CreateBlockBlob(options *PutBlobOptions) error {
-	return b.CreateBlockBlobFromReader(nil, options)
+func (b *Blob) CreateBlockBlob(ctx context.Context, options *PutBlobOptions) error {
+	return b.CreateBlockBlobFromReader(ctx, nil, options)
 }
 
 // CreateBlockBlobFromReader initializes a block blob using data from
@@ -105,7 +106,7 @@ func (b *Blob) CreateBlockBlob(options *PutBlobOptions) error {
 // appropriate then call this method.
 //
 // See https://docs.microsoft.com/en-us/rest/api/storageservices/fileservices/Put-Blob
-func (b *Blob) CreateBlockBlobFromReader(blob io.Reader, options *PutBlobOptions) error {
+func (b *Blob) CreateBlockBlobFromReader(ctx context.Context, blob io.Reader, options *PutBlobOptions) error {
 	params := url.Values{}
 	headers := b.Container.bsc.client.getStandardHeaders()
 	headers["x-ms-blob-type"] = string(BlobTypeBlock)
@@ -142,7 +143,7 @@ func (b *Blob) CreateBlockBlobFromReader(blob io.Reader, options *PutBlobOptions
 	}
 	uri := b.Container.bsc.client.getEndpoint(blobServiceName, b.buildPath(), params)
 
-	resp, err := b.Container.bsc.client.exec(http.MethodPut, uri, headers, blob, b.Container.bsc.auth)
+	resp, err := b.Container.bsc.client.execWithContext(ctx, http.MethodPut, uri, headers, blob, b.Container.bsc.auth)
 	if err != nil {
 		return err
 	}

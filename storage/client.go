@@ -17,6 +17,7 @@ package storage
 
 import (
 	"bufio"
+	"context"
 	"encoding/base64"
 	"encoding/json"
 	"encoding/xml"
@@ -34,9 +35,9 @@ import (
 	"strings"
 	"time"
 
-	"github.com/sggms/azure-sdk-for-go/version"
 	"github.com/Azure/go-autorest/autorest"
 	"github.com/Azure/go-autorest/autorest/azure"
+	"github.com/sggms/azure-sdk-for-go/version"
 )
 
 const (
@@ -702,6 +703,13 @@ func (c Client) getStandardHeaders() map[string]string {
 }
 
 func (c Client) exec(verb, url string, headers map[string]string, body io.Reader, auth authentication) (*http.Response, error) {
+	ctx, cancel := context.WithTimeout(context.Background(), defaultRetryDuration)
+	defer cancel()
+
+	return c.execWithContext(ctx, verb, url, headers, body, auth)
+}
+
+func (c Client) execWithContext(ctx context.Context, verb, url string, headers map[string]string, body io.Reader, auth authentication) (*http.Response, error) {
 	headers, err := c.addAuthorizationHeader(verb, url, headers, auth)
 	if err != nil {
 		return nil, err
@@ -732,6 +740,9 @@ func (c Client) exec(verb, url string, headers map[string]string, body io.Reader
 		v = mergeParams(v, c.accountSASToken)
 		req.URL.RawQuery = v.Encode()
 	}
+
+	// add context
+	req = req.WithContext(ctx)
 
 	resp, err := c.Sender.Send(&c, req)
 	if err != nil {

@@ -15,6 +15,7 @@ package storage
 //  limitations under the License.
 
 import (
+	"context"
 	"errors"
 	"fmt"
 	"net/http"
@@ -68,13 +69,13 @@ type IncrementalCopyOptionsConditions struct {
 // this helper method works faster on smaller files.
 //
 // See https://docs.microsoft.com/en-us/rest/api/storageservices/fileservices/Copy-Blob
-func (b *Blob) Copy(sourceBlob string, options *CopyOptions) error {
+func (b *Blob) Copy(ctx context.Context, sourceBlob string, options *CopyOptions) error {
 	copyID, err := b.StartCopy(sourceBlob, options)
 	if err != nil {
 		return err
 	}
 
-	return b.WaitForCopy(copyID)
+	return b.WaitForCopy(ctx, copyID)
 }
 
 // StartCopy starts a blob copy operation.
@@ -157,9 +158,9 @@ func (b *Blob) AbortCopy(copyID string, options *AbortCopyOptions) error {
 }
 
 // WaitForCopy loops until a BlobCopy operation is completed (or fails with error)
-func (b *Blob) WaitForCopy(copyID string) error {
+func (b *Blob) WaitForCopy(ctx context.Context, copyID string) error {
 	for {
-		err := b.GetProperties(nil)
+		err := b.GetProperties(ctx, nil)
 		if err != nil {
 			return err
 		}

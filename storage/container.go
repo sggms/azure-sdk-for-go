@@ -15,6 +15,7 @@ package storage
 //  limitations under the License.
 
 import (
+	"context"
 	"encoding/xml"
 	"fmt"
 	"io"
@@ -469,7 +470,7 @@ func (c *Container) delete(options *DeleteContainerOptions) (*http.Response, err
 // pagination token and other information in the response of List Blobs call.
 //
 // See https://docs.microsoft.com/en-us/rest/api/storageservices/fileservices/List-Blobs
-func (c *Container) ListBlobs(params ListBlobsParameters) (BlobListResponse, error) {
+func (c *Container) ListBlobs(ctx context.Context, params ListBlobsParameters) (BlobListResponse, error) {
 	q := mergeParams(params.getParameters(), url.Values{
 		"restype": {"container"},
 		"comp":    {"list"},
@@ -488,7 +489,7 @@ func (c *Container) ListBlobs(params ListBlobsParameters) (BlobListResponse, err
 	headers = addToHeaders(headers, "x-ms-client-request-id", params.RequestID)
 
 	var out BlobListResponse
-	resp, err := c.bsc.client.exec(http.MethodGet, uri, headers, nil, c.bsc.auth)
+	resp, err := c.bsc.client.execWithContext(ctx, http.MethodGet, uri, headers, nil, c.bsc.auth)
 	if err != nil {
 		return out, err
 	}

@@ -15,6 +15,7 @@ package storage
 //  limitations under the License.
 
 import (
+	"context"
 	"encoding/xml"
 	"errors"
 	"fmt"
@@ -135,10 +136,10 @@ func (b *Blob) buildPath() string {
 
 // Exists returns true if a blob with given name exists on the specified
 // container of the storage account.
-func (b *Blob) Exists() (bool, error) {
+func (b *Blob) Exists(ctx context.Context) (bool, error) {
 	uri := b.Container.bsc.client.getEndpoint(blobServiceName, b.buildPath(), nil)
 	headers := b.Container.bsc.client.getStandardHeaders()
-	resp, err := b.Container.bsc.client.exec(http.MethodHead, uri, headers, nil, b.Container.bsc.auth)
+	resp, err := b.Container.bsc.client.execWithContext(ctx, http.MethodHead, uri, headers, nil, b.Container.bsc.auth)
 	if resp != nil {
 		defer drainRespBody(resp)
 		if resp.StatusCode == http.StatusOK || resp.StatusCode == http.StatusNotFound {
@@ -199,11 +200,11 @@ func (br BlobRange) String() string {
 // See the GetRange method for use with a Range header.
 //
 // See https://docs.microsoft.com/en-us/rest/api/storageservices/fileservices/Get-Blob
-func (b *Blob) Get(options *GetBlobOptions) (io.ReadCloser, error) {
+func (b *Blob) Get(ctx context.Context, options *GetBlobOptions) (io.ReadCloser, error) {
 	rangeOptions := GetBlobRangeOptions{
 		GetBlobOptions: options,
 	}
-	resp, err := b.getRange(&rangeOptions)
+	resp, err := b.getRange(ctx, &rangeOptions)
 	if err != nil {
 		return nil, err
 	}
@@ -222,8 +223,8 @@ func (b *Blob) Get(options *GetBlobOptions) (io.ReadCloser, error) {
 // Caller must call both Read and Close()// to correctly close the underlying
 // connection.
 // See https://docs.microsoft.com/en-us/rest/api/storageservices/fileservices/Get-Blob
-func (b *Blob) GetRange(options *GetBlobRangeOptions) (io.ReadCloser, error) {
-	resp, err := b.getRange(options)
+func (b *Blob) GetRange(ctx context.Context, options *GetBlobRangeOptions) (io.ReadCloser, error) {
+	resp, err := b.getRange(ctx, options)
 	if err != nil {
 		return nil, err
 	}
@@ -239,7 +240,7 @@ func (b *Blob) GetRange(options *GetBlobRangeOptions) (io.ReadCloser, error) {
 	return resp.Body, nil
 }
 
-func (b *Blob) getRange(options *GetBlobRangeOptions) (*http.Response, error) {
+func (b *Blob) getRange(ctx context.Context, options *GetBlobRangeOptions) (*http.Response, error) {
 	params := url.Values{}
 	headers := b.Container.bsc.client.getStandardHeaders()
 
@@ -258,7 +259,7 @@ func (b *Blob) getRange(options *GetBlobRangeOptions) (*http.Response, error) {
 	}
 	uri := b.Container.bsc.client.getEndpoint(blobServiceName, b.buildPath(), params)
 
-	resp, err := b.Container.bsc.client.exec(http.MethodGet, uri, headers, nil, b.Container.bsc.auth)
+	resp, err := b.Container.bsc.client.execWithContext(ctx, http.MethodGet, uri, headers, nil, b.Container.bsc.auth)
 	if err != nil {
 		return nil, err
 	}
@@ -325,7 +326,7 @@ type GetBlobPropertiesOptions struct {
 
 // GetProperties provides various information about the specified blob.
 // See https://msdn.microsoft.com/en-us/library/azure/dd179394.aspx
-func (b *Blob) GetProperties(options *GetBlobPropertiesOptions) error {
+func (b *Blob) GetProperties(ctx context.Context, options *GetBlobPropertiesOptions) error {
 	params := url.Values{}
 	headers := b.Container.bsc.client.getStandardHeaders()
 
@@ -336,7 +337,7 @@ func (b *Blob) GetProperties(options *GetBlobPropertiesOptions) error {
 	}
 	uri := b.Container.bsc.client.getEndpoint(blobServiceName, b.buildPath(), params)
 
-	resp, err := b.Container.bsc.client.exec(http.MethodHead, uri, headers, nil, b.Container.bsc.auth)
+	resp, err := b.Container.bsc.client.execWithContext(ctx, http.MethodHead, uri, headers, nil, b.Container.bsc.auth)
 	if err != nil {
 		return err
 	}
@@ -523,7 +524,7 @@ type GetBlobMetadataOptions struct {
 // names are case-insensitive.)
 //
 // See https://msdn.microsoft.com/en-us/library/azure/dd179414.aspx
-func (b *Blob) GetMetadata(options *GetBlobMetadataOptions) error {
+func (b *Blob) GetMetadata(ctx context.Context, options *GetBlobMetadataOptions) error {
 	params := url.Values{"comp": {"metadata"}}
 	headers := b.Container.bsc.client.getStandardHeaders()
 
@@ -534,7 +535,7 @@ func (b *Blob) GetMetadata(options *GetBlobMetadataOptions) error {
 	}
 	uri := b.Container.bsc.client.getEndpoint(blobServiceName, b.buildPath(), params)
 
-	resp, err := b.Container.bsc.client.exec(http.MethodGet, uri, headers, nil, b.Container.bsc.auth)
+	resp, err := b.Container.bsc.client.execWithContext(ctx, http.MethodGet, uri, headers, nil, b.Container.bsc.auth)
 	if err != nil {
 		return err
 	}
@@ -569,8 +570,8 @@ type DeleteBlobOptions struct {
 // If the blob does not exists at the time of the Delete Blob operation, it
 // returns error.
 // See https://docs.microsoft.com/en-us/rest/api/storageservices/fileservices/Delete-Blob
-func (b *Blob) Delete(options *DeleteBlobOptions) error {
-	resp, err := b.delete(options)
+func (b *Blob) Delete(ctx context.Context, options *DeleteBlobOptions) error {
+	resp, err := b.delete(ctx, options)
 	if err != nil {
 		return err
 	}
@@ -582,8 +583,8 @@ func (b *Blob) Delete(options *DeleteBlobOptions) error {
 // blob is deleted with this call, returns true. Otherwise returns false.
 //
 // See https://docs.microsoft.com/en-us/rest/api/storageservices/fileservices/Delete-Blob
-func (b *Blob) DeleteIfExists(options *DeleteBlobOptions) (bool, error) {
-	resp, err := b.delete(options)
+func (b *Blob) DeleteIfExists(ctx context.Context, options *DeleteBlobOptions) (bool, error) {
+	resp, err := b.delete(ctx, options)
 	if resp != nil {
 		defer drainRespBody(resp)
 		if resp.StatusCode == http.StatusAccepted || resp.StatusCode == http.StatusNotFound {
@@ -593,7 +594,7 @@ func (b *Blob) DeleteIfExists(options *DeleteBlobOptions) (bool, error) {
 	return false, err
 }
 
-func (b *Blob) delete(options *DeleteBlobOptions) (*http.Response, error) {
+func (b *Blob) delete(ctx context.Context, options *DeleteBlobOptions) (*http.Response, error) {
 	params := url.Values{}
 	headers := b.Container.bsc.client.getStandardHeaders()
 
@@ -610,7 +611,7 @@ func (b *Blob) delete(options *DeleteBlobOptions) (*http.Response, error) {
 		}
 	}
 	uri := b.Container.bsc.client.getEndpoint(blobServiceName, b.buildPath(), params)
-	return b.Container.bsc.client.exec(http.MethodDelete, uri, headers, nil, b.Container.bsc.auth)
+	return b.Container.bsc.client.execWithContext(ctx, http.MethodDelete, uri, headers, nil, b.Container.bsc.auth)
 }
 
 // helper method to construct the path to either a blob or container
