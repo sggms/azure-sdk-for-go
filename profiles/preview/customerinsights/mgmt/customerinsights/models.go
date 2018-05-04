@@ -19,7 +19,7 @@
 
 package customerinsights
 
-import original "github.com/Azure/azure-sdk-for-go/services/customerinsights/mgmt/2017-04-26/customerinsights"
+import original "github.com/sggms/azure-sdk-for-go/services/customerinsights/mgmt/2017-04-26/customerinsights"
 
 type AuthorizationPoliciesClient = original.AuthorizationPoliciesClient
 

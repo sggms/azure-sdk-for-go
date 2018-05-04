@@ -19,7 +19,7 @@
 
 package iothub
 
-import original "github.com/Azure/azure-sdk-for-go/services/preview/provisioningservices/preview/mgmt/2017-08-21-preview/iothub"
+import original "github.com/sggms/azure-sdk-for-go/services/preview/provisioningservices/preview/mgmt/2017-08-21-preview/iothub"
 
 const (
 	DefaultBaseURI = original.DefaultBaseURI

@@ -19,7 +19,7 @@
 
 package automation
 
-import original "github.com/Azure/azure-sdk-for-go/services/automation/mgmt/2017-05-15-preview/automation"
+import original "github.com/sggms/azure-sdk-for-go/services/automation/mgmt/2017-05-15-preview/automation"
 
 type AccountClient = original.AccountClient
 type ActivityClient = original.ActivityClient

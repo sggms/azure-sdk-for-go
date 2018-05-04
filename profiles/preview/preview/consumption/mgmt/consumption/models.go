@@ -19,7 +19,7 @@
 
 package consumption
 
-import original "github.com/Azure/azure-sdk-for-go/services/preview/consumption/mgmt/2017-12-30-preview/consumption"
+import original "github.com/sggms/azure-sdk-for-go/services/preview/consumption/mgmt/2017-12-30-preview/consumption"
 
 type BudgetsClient = original.BudgetsClient
 

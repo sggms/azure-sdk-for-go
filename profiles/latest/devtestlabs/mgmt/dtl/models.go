@@ -19,7 +19,7 @@
 
 package dtl
 
-import original "github.com/Azure/azure-sdk-for-go/services/devtestlabs/mgmt/2016-05-15/dtl"
+import original "github.com/sggms/azure-sdk-for-go/services/devtestlabs/mgmt/2016-05-15/dtl"
 
 type ArmTemplatesClient = original.ArmTemplatesClient
 type ArtifactsClient = original.ArtifactsClient

@@ -23,10 +23,10 @@ import (
 	"strings"
 	"time"
 
-	"github.com/Azure/azure-sdk-for-go/tools/apidiff/delta"
-	"github.com/Azure/azure-sdk-for-go/tools/apidiff/exports"
-	"github.com/Azure/azure-sdk-for-go/tools/apidiff/ioext"
-	"github.com/Azure/azure-sdk-for-go/tools/apidiff/repo"
+	"github.com/sggms/azure-sdk-for-go/tools/apidiff/delta"
+	"github.com/sggms/azure-sdk-for-go/tools/apidiff/exports"
+	"github.com/sggms/azure-sdk-for-go/tools/apidiff/ioext"
+	"github.com/sggms/azure-sdk-for-go/tools/apidiff/repo"
 )
 
 func printf(format string, a ...interface{}) {

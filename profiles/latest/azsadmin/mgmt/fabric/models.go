@@ -19,7 +19,7 @@
 
 package fabric
 
-import original "github.com/Azure/azure-sdk-for-go/services/azsadmin/mgmt/2016-05-01/fabric"
+import original "github.com/sggms/azure-sdk-for-go/services/azsadmin/mgmt/2016-05-01/fabric"
 
 const (
 	DefaultBaseURI = original.DefaultBaseURI

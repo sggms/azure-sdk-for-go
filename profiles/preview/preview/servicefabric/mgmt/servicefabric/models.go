@@ -19,7 +19,7 @@
 
 package servicefabric
 
-import original "github.com/Azure/azure-sdk-for-go/services/preview/servicefabric/mgmt/2017-07-01-preview/servicefabric"
+import original "github.com/sggms/azure-sdk-for-go/services/preview/servicefabric/mgmt/2017-07-01-preview/servicefabric"
 
 type ApplicationClient = original.ApplicationClient
 type ApplicationTypeClient = original.ApplicationTypeClient

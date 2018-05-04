@@ -19,7 +19,7 @@
 
 package keyvault
 
-import original "github.com/Azure/azure-sdk-for-go/services/preview/keyvault/v7.0/keyvault"
+import original "github.com/sggms/azure-sdk-for-go/services/preview/keyvault/v7.0/keyvault"
 
 type BaseClient = original.BaseClient
 type ActionType = original.ActionType

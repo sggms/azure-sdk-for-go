@@ -19,7 +19,7 @@
 
 package backup
 
-import original "github.com/Azure/azure-sdk-for-go/services/recoveryservices/mgmt/2017-07-01/backup"
+import original "github.com/sggms/azure-sdk-for-go/services/recoveryservices/mgmt/2017-07-01/backup"
 
 type BackupsClient = original.BackupsClient
 

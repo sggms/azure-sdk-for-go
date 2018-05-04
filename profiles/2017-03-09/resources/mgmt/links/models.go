@@ -19,7 +19,7 @@
 
 package links
 
-import original "github.com/Azure/azure-sdk-for-go/services/resources/mgmt/2016-09-01/links"
+import original "github.com/sggms/azure-sdk-for-go/services/resources/mgmt/2016-09-01/links"
 
 const (
 	DefaultBaseURI = original.DefaultBaseURI

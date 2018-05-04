@@ -19,7 +19,7 @@
 
 package storageimportexport
 
-import original "github.com/Azure/azure-sdk-for-go/services/storageimportexport/mgmt/2016-11-01/storageimportexport"
+import original "github.com/sggms/azure-sdk-for-go/services/storageimportexport/mgmt/2016-11-01/storageimportexport"
 
 type BitLockerKeysClient = original.BitLockerKeysClient
 

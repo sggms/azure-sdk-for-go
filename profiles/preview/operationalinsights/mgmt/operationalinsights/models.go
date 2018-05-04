@@ -19,7 +19,7 @@
 
 package operationalinsights
 
-import original "github.com/Azure/azure-sdk-for-go/services/operationalinsights/mgmt/2015-11-01-preview/operationalinsights"
+import original "github.com/sggms/azure-sdk-for-go/services/operationalinsights/mgmt/2015-11-01-preview/operationalinsights"
 
 const (
 	DefaultBaseURI = original.DefaultBaseURI

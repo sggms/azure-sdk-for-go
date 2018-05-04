@@ -20,7 +20,7 @@
 package iotspaces
 
 import (
-	original "github.com/Azure/azure-sdk-for-go/services/preview/iotspaces/mgmt/2017-10-01-preview/iotspaces"
+	original "github.com/sggms/azure-sdk-for-go/services/preview/iotspaces/mgmt/2017-10-01-preview/iotspaces"
 	uuid "github.com/satori/go.uuid"
 )
 

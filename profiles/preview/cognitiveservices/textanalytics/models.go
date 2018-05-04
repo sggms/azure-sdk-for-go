@@ -19,7 +19,7 @@
 
 package textanalytics
 
-import original "github.com/Azure/azure-sdk-for-go/services/cognitiveservices/v2.0/textanalytics"
+import original "github.com/sggms/azure-sdk-for-go/services/cognitiveservices/v2.0/textanalytics"
 
 type BaseClient = original.BaseClient
 type AzureRegions = original.AzureRegions

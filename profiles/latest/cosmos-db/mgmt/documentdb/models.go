@@ -19,7 +19,7 @@
 
 package documentdb
 
-import original "github.com/Azure/azure-sdk-for-go/services/cosmos-db/mgmt/2015-04-08/documentdb"
+import original "github.com/sggms/azure-sdk-for-go/services/cosmos-db/mgmt/2015-04-08/documentdb"
 
 const (
 	DefaultBaseURI = original.DefaultBaseURI

@@ -19,7 +19,7 @@
 
 package filesystem
 
-import original "github.com/Azure/azure-sdk-for-go/services/datalake/store/2016-11-01/filesystem"
+import original "github.com/sggms/azure-sdk-for-go/services/datalake/store/2016-11-01/filesystem"
 
 const (
 	DefaultAdlsFileSystemDNSSuffix = original.DefaultAdlsFileSystemDNSSuffix

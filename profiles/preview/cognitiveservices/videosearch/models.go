@@ -19,7 +19,7 @@
 
 package videosearch
 
-import original "github.com/Azure/azure-sdk-for-go/services/cognitiveservices/v1.0/videosearch"
+import original "github.com/sggms/azure-sdk-for-go/services/cognitiveservices/v1.0/videosearch"
 
 const (
 	DefaultBaseURI = original.DefaultBaseURI

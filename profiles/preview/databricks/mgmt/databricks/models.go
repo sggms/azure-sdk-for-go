@@ -19,7 +19,7 @@
 
 package databricks
 
-import original "github.com/Azure/azure-sdk-for-go/services/databricks/mgmt/2018-04-01/databricks"
+import original "github.com/sggms/azure-sdk-for-go/services/databricks/mgmt/2018-04-01/databricks"
 
 const (
 	DefaultBaseURI = original.DefaultBaseURI

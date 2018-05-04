@@ -19,7 +19,7 @@
 
 package mobileengagement
 
-import original "github.com/Azure/azure-sdk-for-go/services/mobileengagement/mgmt/2014-12-01/mobileengagement"
+import original "github.com/sggms/azure-sdk-for-go/services/mobileengagement/mgmt/2014-12-01/mobileengagement"
 
 type AppCollectionsClient = original.AppCollectionsClient
 type AppsClient = original.AppsClient

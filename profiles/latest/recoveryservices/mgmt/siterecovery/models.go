@@ -19,7 +19,7 @@
 
 package siterecovery
 
-import original "github.com/Azure/azure-sdk-for-go/services/recoveryservices/mgmt/2018-01-10/siterecovery"
+import original "github.com/sggms/azure-sdk-for-go/services/recoveryservices/mgmt/2018-01-10/siterecovery"
 
 const (
 	DefaultBaseURI = original.DefaultBaseURI

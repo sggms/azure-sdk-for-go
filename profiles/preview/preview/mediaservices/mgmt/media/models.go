@@ -19,7 +19,7 @@
 
 package media
 
-import original "github.com/Azure/azure-sdk-for-go/services/preview/mediaservices/mgmt/2018-03-30-preview/media"
+import original "github.com/sggms/azure-sdk-for-go/services/preview/mediaservices/mgmt/2018-03-30-preview/media"
 
 type AssetsClient = original.AssetsClient
 

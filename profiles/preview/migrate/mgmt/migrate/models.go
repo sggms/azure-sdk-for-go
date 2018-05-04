@@ -19,7 +19,7 @@
 
 package migrate
 
-import original "github.com/Azure/azure-sdk-for-go/services/migrate/mgmt/2018-02-02/migrate"
+import original "github.com/sggms/azure-sdk-for-go/services/migrate/mgmt/2018-02-02/migrate"
 
 type AssessedMachinesClient = original.AssessedMachinesClient
 type AssessmentsClient = original.AssessmentsClient

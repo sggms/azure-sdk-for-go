@@ -19,7 +19,7 @@
 
 package experimentation
 
-import original "github.com/Azure/azure-sdk-for-go/services/preview/machinelearning/mgmt/2017-05-01-preview/experimentation"
+import original "github.com/sggms/azure-sdk-for-go/services/preview/machinelearning/mgmt/2017-05-01-preview/experimentation"
 
 type AccountsClient = original.AccountsClient
 

@@ -19,7 +19,7 @@
 
 package search
 
-import original "github.com/Azure/azure-sdk-for-go/services/search/mgmt/2015-08-19/search"
+import original "github.com/sggms/azure-sdk-for-go/services/search/mgmt/2015-08-19/search"
 
 type AdminKeysClient = original.AdminKeysClient
 

@@ -19,7 +19,7 @@
 
 package consumption
 
-import original "github.com/Azure/azure-sdk-for-go/services/consumption/mgmt/2017-11-30/consumption"
+import original "github.com/sggms/azure-sdk-for-go/services/consumption/mgmt/2017-11-30/consumption"
 
 const (
 	DefaultBaseURI = original.DefaultBaseURI

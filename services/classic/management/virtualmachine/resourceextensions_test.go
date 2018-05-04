@@ -19,7 +19,7 @@ package virtualmachine
 import (
 	"testing"
 
-	"github.com/Azure/azure-sdk-for-go/services/classic/management/testutils"
+	"github.com/sggms/azure-sdk-for-go/services/classic/management/testutils"
 )
 
 func TestAzureGetResourceExtensions(t *testing.T) {

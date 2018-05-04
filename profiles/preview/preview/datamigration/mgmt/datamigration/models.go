@@ -19,7 +19,7 @@
 
 package datamigration
 
-import original "github.com/Azure/azure-sdk-for-go/services/preview/datamigration/mgmt/2018-03-31-preview/datamigration"
+import original "github.com/sggms/azure-sdk-for-go/services/preview/datamigration/mgmt/2018-03-31-preview/datamigration"
 
 const (
 	DefaultBaseURI = original.DefaultBaseURI

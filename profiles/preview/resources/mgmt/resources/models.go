@@ -19,7 +19,7 @@
 
 package resources
 
-import original "github.com/Azure/azure-sdk-for-go/services/resources/mgmt/2018-02-01/resources"
+import original "github.com/sggms/azure-sdk-for-go/services/resources/mgmt/2018-02-01/resources"
 
 const (
 	DefaultBaseURI = original.DefaultBaseURI

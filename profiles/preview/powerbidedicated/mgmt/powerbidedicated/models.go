@@ -19,7 +19,7 @@
 
 package powerbidedicated
 
-import original "github.com/Azure/azure-sdk-for-go/services/powerbidedicated/mgmt/2017-10-01/powerbidedicated"
+import original "github.com/sggms/azure-sdk-for-go/services/powerbidedicated/mgmt/2017-10-01/powerbidedicated"
 
 type CapacitiesClient = original.CapacitiesClient
 

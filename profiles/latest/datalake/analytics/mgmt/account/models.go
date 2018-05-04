@@ -19,7 +19,7 @@
 
 package account
 
-import original "github.com/Azure/azure-sdk-for-go/services/datalake/analytics/mgmt/2016-11-01/account"
+import original "github.com/sggms/azure-sdk-for-go/services/datalake/analytics/mgmt/2016-11-01/account"
 
 type AccountsClient = original.AccountsClient
 

@@ -19,7 +19,7 @@
 
 package servermanagement
 
-import original "github.com/Azure/azure-sdk-for-go/services/servermanagement/mgmt/2016-07-01-preview/servermanagement"
+import original "github.com/sggms/azure-sdk-for-go/services/servermanagement/mgmt/2016-07-01-preview/servermanagement"
 
 const (
 	DefaultBaseURI = original.DefaultBaseURI

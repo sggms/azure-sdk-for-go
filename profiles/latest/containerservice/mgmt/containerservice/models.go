@@ -19,7 +19,7 @@
 
 package containerservice
 
-import original "github.com/Azure/azure-sdk-for-go/services/containerservice/mgmt/2017-09-30/containerservice"
+import original "github.com/sggms/azure-sdk-for-go/services/containerservice/mgmt/2017-09-30/containerservice"
 
 const (
 	DefaultBaseURI = original.DefaultBaseURI

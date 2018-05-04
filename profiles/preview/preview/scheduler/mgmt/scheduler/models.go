@@ -19,7 +19,7 @@
 
 package scheduler
 
-import original "github.com/Azure/azure-sdk-for-go/services/preview/scheduler/mgmt/2014-08-01-preview/scheduler"
+import original "github.com/sggms/azure-sdk-for-go/services/preview/scheduler/mgmt/2014-08-01-preview/scheduler"
 
 const (
 	DefaultBaseURI = original.DefaultBaseURI

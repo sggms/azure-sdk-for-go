@@ -19,7 +19,7 @@
 
 package subscription
 
-import original "github.com/Azure/azure-sdk-for-go/services/preview/subscription/mgmt/2018-03-01-preview/subscription"
+import original "github.com/sggms/azure-sdk-for-go/services/preview/subscription/mgmt/2018-03-01-preview/subscription"
 
 const (
 	DefaultBaseURI = original.DefaultBaseURI

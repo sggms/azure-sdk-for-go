@@ -21,7 +21,7 @@ import (
 	"encoding/xml"
 	"fmt"
 
-	"github.com/Azure/azure-sdk-for-go/services/classic/management"
+	"github.com/sggms/azure-sdk-for-go/services/classic/management"
 )
 
 const (

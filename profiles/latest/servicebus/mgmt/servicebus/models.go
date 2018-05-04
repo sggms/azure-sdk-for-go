@@ -19,7 +19,7 @@
 
 package servicebus
 
-import original "github.com/Azure/azure-sdk-for-go/services/servicebus/mgmt/2017-04-01/servicebus"
+import original "github.com/sggms/azure-sdk-for-go/services/servicebus/mgmt/2017-04-01/servicebus"
 
 const (
 	DefaultBaseURI = original.DefaultBaseURI

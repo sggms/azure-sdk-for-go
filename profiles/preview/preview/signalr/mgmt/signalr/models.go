@@ -19,7 +19,7 @@
 
 package signalr
 
-import original "github.com/Azure/azure-sdk-for-go/services/preview/signalr/mgmt/2018-03-01-preview/signalr"
+import original "github.com/sggms/azure-sdk-for-go/services/preview/signalr/mgmt/2018-03-01-preview/signalr"
 
 const (
 	DefaultBaseURI = original.DefaultBaseURI

@@ -19,7 +19,7 @@
 
 package features
 
-import original "github.com/Azure/azure-sdk-for-go/services/resources/mgmt/2015-12-01/features"
+import original "github.com/sggms/azure-sdk-for-go/services/resources/mgmt/2015-12-01/features"
 
 const (
 	DefaultBaseURI = original.DefaultBaseURI

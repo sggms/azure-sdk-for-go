@@ -19,7 +19,7 @@
 
 package notificationhubs
 
-import original "github.com/Azure/azure-sdk-for-go/services/notificationhubs/mgmt/2017-04-01/notificationhubs"
+import original "github.com/sggms/azure-sdk-for-go/services/notificationhubs/mgmt/2017-04-01/notificationhubs"
 
 const (
 	DefaultBaseURI = original.DefaultBaseURI

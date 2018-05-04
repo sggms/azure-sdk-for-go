@@ -19,7 +19,7 @@
 
 package media
 
-import original "github.com/Azure/azure-sdk-for-go/services/mediaservices/mgmt/2015-10-01/media"
+import original "github.com/sggms/azure-sdk-for-go/services/mediaservices/mgmt/2015-10-01/media"
 
 const (
 	DefaultBaseURI = original.DefaultBaseURI

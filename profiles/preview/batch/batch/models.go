@@ -19,7 +19,7 @@
 
 package batch
 
-import original "github.com/Azure/azure-sdk-for-go/services/batch/2018-03-01.6.1/batch"
+import original "github.com/sggms/azure-sdk-for-go/services/batch/2018-03-01.6.1/batch"
 
 type AccountClient = original.AccountClient
 type ApplicationClient = original.ApplicationClient

@@ -19,7 +19,7 @@
 
 package marketplaceordering
 
-import original "github.com/Azure/azure-sdk-for-go/services/marketplaceordering/mgmt/2015-06-01/marketplaceordering"
+import original "github.com/sggms/azure-sdk-for-go/services/marketplaceordering/mgmt/2015-06-01/marketplaceordering"
 
 const (
 	DefaultBaseURI = original.DefaultBaseURI

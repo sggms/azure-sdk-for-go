@@ -19,7 +19,7 @@
 
 package addons
 
-import original "github.com/Azure/azure-sdk-for-go/services/preview/addons/mgmt/2018-03-01/addons"
+import original "github.com/sggms/azure-sdk-for-go/services/preview/addons/mgmt/2018-03-01/addons"
 
 const (
 	DefaultBaseURI = original.DefaultBaseURI

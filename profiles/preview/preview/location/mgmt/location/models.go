@@ -19,7 +19,7 @@
 
 package location
 
-import original "github.com/Azure/azure-sdk-for-go/services/preview/location/mgmt/2017-01-01-preview/location"
+import original "github.com/sggms/azure-sdk-for-go/services/preview/location/mgmt/2017-01-01-preview/location"
 
 type AccountsClient = original.AccountsClient
 

@@ -19,7 +19,7 @@
 
 package hdinsight
 
-import original "github.com/Azure/azure-sdk-for-go/services/preview/hdinsight/mgmt/2015-03-01-preview/hdinsight"
+import original "github.com/sggms/azure-sdk-for-go/services/preview/hdinsight/mgmt/2015-03-01-preview/hdinsight"
 
 type ApplicationsClient = original.ApplicationsClient
 

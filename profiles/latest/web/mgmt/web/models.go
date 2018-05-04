@@ -19,7 +19,7 @@
 
 package web
 
-import original "github.com/Azure/azure-sdk-for-go/services/web/mgmt/2016-09-01/web"
+import original "github.com/sggms/azure-sdk-for-go/services/web/mgmt/2016-09-01/web"
 
 type AppsClient = original.AppsClient
 type AppServiceCertificateOrdersClient = original.AppServiceCertificateOrdersClient

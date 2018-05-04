@@ -19,7 +19,7 @@
 
 package locks
 
-import original "github.com/Azure/azure-sdk-for-go/services/resources/mgmt/2016-09-01/locks"
+import original "github.com/sggms/azure-sdk-for-go/services/resources/mgmt/2016-09-01/locks"
 
 const (
 	DefaultBaseURI = original.DefaultBaseURI

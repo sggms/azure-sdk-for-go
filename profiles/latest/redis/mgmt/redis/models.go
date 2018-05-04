@@ -19,7 +19,7 @@
 
 package redis
 
-import original "github.com/Azure/azure-sdk-for-go/services/redis/mgmt/2018-03-01/redis"
+import original "github.com/sggms/azure-sdk-for-go/services/redis/mgmt/2018-03-01/redis"
 
 const (
 	DefaultBaseURI = original.DefaultBaseURI

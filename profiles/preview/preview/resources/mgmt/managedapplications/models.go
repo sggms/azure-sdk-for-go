@@ -19,7 +19,7 @@
 
 package managedapplications
 
-import original "github.com/Azure/azure-sdk-for-go/services/preview/resources/mgmt/2016-09-01-preview/managedapplications"
+import original "github.com/sggms/azure-sdk-for-go/services/preview/resources/mgmt/2016-09-01-preview/managedapplications"
 
 type ApplianceDefinitionsClient = original.ApplianceDefinitionsClient
 type AppliancesClient = original.AppliancesClient

@@ -19,7 +19,7 @@
 
 package storsimple
 
-import original "github.com/Azure/azure-sdk-for-go/services/storsimple8000series/mgmt/2017-06-01/storsimple"
+import original "github.com/sggms/azure-sdk-for-go/services/storsimple8000series/mgmt/2017-06-01/storsimple"
 
 type AccessControlRecordsClient = original.AccessControlRecordsClient
 type AlertsClient = original.AlertsClient

@@ -19,7 +19,7 @@
 
 package datacatalog
 
-import original "github.com/Azure/azure-sdk-for-go/services/datacatalog/mgmt/2016-03-30/datacatalog"
+import original "github.com/sggms/azure-sdk-for-go/services/datacatalog/mgmt/2016-03-30/datacatalog"
 
 type ADCCatalogsClient = original.ADCCatalogsClient
 type ADCOperationsClient = original.ADCOperationsClient

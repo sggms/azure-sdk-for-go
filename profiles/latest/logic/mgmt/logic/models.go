@@ -19,7 +19,7 @@
 
 package logic
 
-import original "github.com/Azure/azure-sdk-for-go/services/logic/mgmt/2016-06-01/logic"
+import original "github.com/sggms/azure-sdk-for-go/services/logic/mgmt/2016-06-01/logic"
 
 type AgreementsClient = original.AgreementsClient
 type CertificatesClient = original.CertificatesClient

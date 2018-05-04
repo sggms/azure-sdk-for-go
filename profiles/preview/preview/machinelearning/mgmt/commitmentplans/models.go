@@ -19,7 +19,7 @@
 
 package commitmentplans
 
-import original "github.com/Azure/azure-sdk-for-go/services/preview/machinelearning/mgmt/2016-05-01-preview/commitmentplans"
+import original "github.com/sggms/azure-sdk-for-go/services/preview/machinelearning/mgmt/2016-05-01-preview/commitmentplans"
 
 const (
 	DefaultBaseURI = original.DefaultBaseURI

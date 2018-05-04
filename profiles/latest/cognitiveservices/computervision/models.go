@@ -19,7 +19,7 @@
 
 package computervision
 
-import original "github.com/Azure/azure-sdk-for-go/services/cognitiveservices/v1.0/computervision"
+import original "github.com/sggms/azure-sdk-for-go/services/cognitiveservices/v1.0/computervision"
 
 type BaseClient = original.BaseClient
 type AzureRegions = original.AzureRegions

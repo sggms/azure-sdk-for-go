@@ -19,7 +19,7 @@
 
 package training
 
-import original "github.com/Azure/azure-sdk-for-go/services/cognitiveservices/v1.2/customvision/training"
+import original "github.com/sggms/azure-sdk-for-go/services/cognitiveservices/v1.2/customvision/training"
 
 const (
 	DefaultBaseURI = original.DefaultBaseURI

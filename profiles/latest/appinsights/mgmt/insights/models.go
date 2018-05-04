@@ -19,7 +19,7 @@
 
 package insights
 
-import original "github.com/Azure/azure-sdk-for-go/services/appinsights/mgmt/2015-05-01/insights"
+import original "github.com/sggms/azure-sdk-for-go/services/appinsights/mgmt/2015-05-01/insights"
 
 type AnalyticsItemClient = original.AnalyticsItemClient
 type AnnotationsClient = original.AnnotationsClient

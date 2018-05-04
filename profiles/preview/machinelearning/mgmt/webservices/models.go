@@ -19,7 +19,7 @@
 
 package webservices
 
-import original "github.com/Azure/azure-sdk-for-go/services/machinelearning/mgmt/2017-01-01/webservices"
+import original "github.com/sggms/azure-sdk-for-go/services/machinelearning/mgmt/2017-01-01/webservices"
 
 const (
 	DefaultBaseURI = original.DefaultBaseURI

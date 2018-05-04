@@ -19,7 +19,7 @@
 
 package contentmoderator
 
-import original "github.com/Azure/azure-sdk-for-go/services/cognitiveservices/v1.0/contentmoderator"
+import original "github.com/sggms/azure-sdk-for-go/services/cognitiveservices/v1.0/contentmoderator"
 
 type BaseClient = original.BaseClient
 type ImageModerationClient = original.ImageModerationClient

@@ -19,7 +19,7 @@
 
 package storage
 
-import original "github.com/Azure/azure-sdk-for-go/services/storage/mgmt/2016-01-01/storage"
+import original "github.com/sggms/azure-sdk-for-go/services/storage/mgmt/2016-01-01/storage"
 
 type AccountsClient = original.AccountsClient
 

@@ -19,7 +19,7 @@
 
 package cognitiveservices
 
-import original "github.com/Azure/azure-sdk-for-go/services/cognitiveservices/mgmt/2017-04-18/cognitiveservices"
+import original "github.com/sggms/azure-sdk-for-go/services/cognitiveservices/mgmt/2017-04-18/cognitiveservices"
 
 type AccountsClient = original.AccountsClient
 type CheckSkuAvailabilityClient = original.CheckSkuAvailabilityClient

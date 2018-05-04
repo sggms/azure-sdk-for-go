@@ -19,7 +19,7 @@
 
 package databox
 
-import original "github.com/Azure/azure-sdk-for-go/services/databox/mgmt/2018-01-01/databox"
+import original "github.com/sggms/azure-sdk-for-go/services/databox/mgmt/2018-01-01/databox"
 
 const (
 	DefaultBaseURI = original.DefaultBaseURI

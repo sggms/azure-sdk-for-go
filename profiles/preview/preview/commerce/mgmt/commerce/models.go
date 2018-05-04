@@ -19,7 +19,7 @@
 
 package commerce
 
-import original "github.com/Azure/azure-sdk-for-go/services/preview/commerce/mgmt/2015-06-01-preview/commerce"
+import original "github.com/sggms/azure-sdk-for-go/services/preview/commerce/mgmt/2015-06-01-preview/commerce"
 
 const (
 	DefaultBaseURI = original.DefaultBaseURI

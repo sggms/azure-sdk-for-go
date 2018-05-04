@@ -19,7 +19,7 @@
 
 package compute
 
-import original "github.com/Azure/azure-sdk-for-go/services/compute/mgmt/2018-04-01/compute"
+import original "github.com/sggms/azure-sdk-for-go/services/compute/mgmt/2018-04-01/compute"
 
 type AvailabilitySetsClient = original.AvailabilitySetsClient
 

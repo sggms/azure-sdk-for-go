@@ -19,7 +19,7 @@
 
 package graphrbac
 
-import original "github.com/Azure/azure-sdk-for-go/services/graphrbac/1.6/graphrbac"
+import original "github.com/sggms/azure-sdk-for-go/services/graphrbac/1.6/graphrbac"
 
 type ApplicationsClient = original.ApplicationsClient
 

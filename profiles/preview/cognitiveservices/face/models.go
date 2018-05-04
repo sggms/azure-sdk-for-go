@@ -19,7 +19,7 @@
 
 package face
 
-import original "github.com/Azure/azure-sdk-for-go/services/cognitiveservices/v1.0/face"
+import original "github.com/sggms/azure-sdk-for-go/services/cognitiveservices/v1.0/face"
 
 type BaseClient = original.BaseClient
 type Client = original.Client

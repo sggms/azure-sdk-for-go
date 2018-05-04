@@ -19,7 +19,7 @@
 
 package infrastructureinsights
 
-import original "github.com/Azure/azure-sdk-for-go/services/azsadmin/mgmt/2016-05-01/infrastructureinsights"
+import original "github.com/sggms/azure-sdk-for-go/services/azsadmin/mgmt/2016-05-01/infrastructureinsights"
 
 type AlertsClient = original.AlertsClient
 

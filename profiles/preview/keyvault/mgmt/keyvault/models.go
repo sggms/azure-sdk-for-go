@@ -19,7 +19,7 @@
 
 package keyvault
 
-import original "github.com/Azure/azure-sdk-for-go/services/keyvault/mgmt/2016-10-01/keyvault"
+import original "github.com/sggms/azure-sdk-for-go/services/keyvault/mgmt/2016-10-01/keyvault"
 
 const (
 	DefaultBaseURI = original.DefaultBaseURI

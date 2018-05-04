@@ -19,7 +19,7 @@
 
 package resourcehealth
 
-import original "github.com/Azure/azure-sdk-for-go/services/resourcehealth/mgmt/2017-07-01/resourcehealth"
+import original "github.com/sggms/azure-sdk-for-go/services/resourcehealth/mgmt/2017-07-01/resourcehealth"
 
 type AvailabilityStatusesClient = original.AvailabilityStatusesClient
 

@@ -19,7 +19,7 @@
 
 package spellcheck
 
-import original "github.com/Azure/azure-sdk-for-go/services/cognitiveservices/v1.0/spellcheck"
+import original "github.com/sggms/azure-sdk-for-go/services/cognitiveservices/v1.0/spellcheck"
 
 const (
 	DefaultBaseURI = original.DefaultBaseURI

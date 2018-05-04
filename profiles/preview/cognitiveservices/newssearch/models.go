@@ -19,7 +19,7 @@
 
 package newssearch
 
-import original "github.com/Azure/azure-sdk-for-go/services/cognitiveservices/v1.0/newssearch"
+import original "github.com/sggms/azure-sdk-for-go/services/cognitiveservices/v1.0/newssearch"
 
 const (
 	DefaultBaseURI = original.DefaultBaseURI

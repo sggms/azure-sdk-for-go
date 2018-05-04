@@ -15,7 +15,7 @@
 
 package main
 
-import "github.com/Azure/azure-sdk-for-go/tools/profileBuilder/cmd"
+import "github.com/sggms/azure-sdk-for-go/tools/profileBuilder/cmd"
 
 func main() {
 	cmd.Execute()

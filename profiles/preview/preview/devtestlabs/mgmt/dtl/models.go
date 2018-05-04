@@ -19,7 +19,7 @@
 
 package dtl
 
-import original "github.com/Azure/azure-sdk-for-go/services/preview/devtestlabs/mgmt/2015-05-21-preview/dtl"
+import original "github.com/sggms/azure-sdk-for-go/services/preview/devtestlabs/mgmt/2015-05-21-preview/dtl"
 
 type ArtifactClient = original.ArtifactClient
 type ArtifactSourceClient = original.ArtifactSourceClient

@@ -19,7 +19,7 @@
 
 package websearch
 
-import original "github.com/Azure/azure-sdk-for-go/services/cognitiveservices/v1.0/websearch"
+import original "github.com/sggms/azure-sdk-for-go/services/cognitiveservices/v1.0/websearch"
 
 const (
 	DefaultBaseURI = original.DefaultBaseURI

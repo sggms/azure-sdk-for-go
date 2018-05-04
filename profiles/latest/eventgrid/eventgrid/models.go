@@ -19,7 +19,7 @@
 
 package eventgrid
 
-import original "github.com/Azure/azure-sdk-for-go/services/eventgrid/2018-01-01/eventgrid"
+import original "github.com/sggms/azure-sdk-for-go/services/eventgrid/2018-01-01/eventgrid"
 
 type BaseClient = original.BaseClient
 type ContainerRegistryEventActor = original.ContainerRegistryEventActor

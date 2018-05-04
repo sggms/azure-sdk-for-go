@@ -19,7 +19,7 @@
 
 package entitysearch
 
-import original "github.com/Azure/azure-sdk-for-go/services/cognitiveservices/v1.0/entitysearch"
+import original "github.com/sggms/azure-sdk-for-go/services/cognitiveservices/v1.0/entitysearch"
 
 const (
 	DefaultBaseURI = original.DefaultBaseURI

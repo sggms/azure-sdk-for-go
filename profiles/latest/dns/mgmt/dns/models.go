@@ -19,7 +19,7 @@
 
 package dns
 
-import original "github.com/Azure/azure-sdk-for-go/services/dns/mgmt/2017-10-01/dns"
+import original "github.com/sggms/azure-sdk-for-go/services/dns/mgmt/2017-10-01/dns"
 
 const (
 	DefaultBaseURI = original.DefaultBaseURI

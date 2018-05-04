@@ -17,8 +17,8 @@ package cmd
 import (
 	"fmt"
 
-	"github.com/Azure/azure-sdk-for-go/tools/apidiff/exports"
-	"github.com/Azure/azure-sdk-for-go/tools/apidiff/repo"
+	"github.com/sggms/azure-sdk-for-go/tools/apidiff/exports"
+	"github.com/sggms/azure-sdk-for-go/tools/apidiff/repo"
 	"github.com/spf13/cobra"
 )
 

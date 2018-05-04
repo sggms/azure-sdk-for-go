@@ -19,7 +19,7 @@
 
 package msi
 
-import original "github.com/Azure/azure-sdk-for-go/services/preview/msi/mgmt/2015-08-31-preview/msi"
+import original "github.com/sggms/azure-sdk-for-go/services/preview/msi/mgmt/2015-08-31-preview/msi"
 
 const (
 	DefaultBaseURI = original.DefaultBaseURI

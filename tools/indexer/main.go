@@ -21,7 +21,7 @@ import (
 	"path/filepath"
 	"time"
 
-	"github.com/Azure/azure-sdk-for-go/tools/indexer/util"
+	"github.com/sggms/azure-sdk-for-go/tools/indexer/util"
 )
 
 // adds any missing SDK packages to godoc.org

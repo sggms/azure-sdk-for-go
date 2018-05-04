@@ -19,7 +19,7 @@
 
 package managementgroups
 
-import original "github.com/Azure/azure-sdk-for-go/services/resources/mgmt/2018-01-01-preview/management"
+import original "github.com/sggms/azure-sdk-for-go/services/resources/mgmt/2018-01-01-preview/management"
 
 const (
 	DefaultBaseURI = original.DefaultBaseURI

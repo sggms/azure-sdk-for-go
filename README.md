@@ -71,7 +71,7 @@ package main
 
 import (
 	"context"
-	"github.com/Azure/azure-sdk-for-go/services/network/mgmt/2017-09-01/network"
+	"github.com/sggms/azure-sdk-for-go/services/network/mgmt/2017-09-01/network"
 	"github.com/Azure/go-autorest/autorest/azure/auth"
 	"github.com/Azure/go-autorest/autorest/to"
 )
@@ -177,8 +177,8 @@ latest API versions for Compute and Network, use the following imports:
 
 ```go
 import (
-    "github.com/Azure/azure-sdk-for-go/services/compute/mgmt/2017-12-01/compute"
-    "github.com/Azure/azure-sdk-for-go/services/network/mgmt/2017-09-01/network"
+    "github.com/sggms/azure-sdk-for-go/services/compute/mgmt/2017-12-01/compute"
+    "github.com/sggms/azure-sdk-for-go/services/network/mgmt/2017-09-01/network"
 )
 ```
 
@@ -203,9 +203,9 @@ component API versions are aliases to the true service package under
 `services/`. You can use them as follows:
 
 ```go
-import "github.com/Azure/azure-sdk-for-go/profiles/2017-03-09/compute/mgmt/compute"
-import "github.com/Azure/azure-sdk-for-go/profiles/2017-03-09/network/mgmt/network"
-import "github.com/Azure/azure-sdk-for-go/profiles/2017-03-09/storage/mgmt/storage"
+import "github.com/sggms/azure-sdk-for-go/profiles/2017-03-09/compute/mgmt/compute"
+import "github.com/sggms/azure-sdk-for-go/profiles/2017-03-09/network/mgmt/network"
+import "github.com/sggms/azure-sdk-for-go/profiles/2017-03-09/storage/mgmt/storage"
 ```
 
 The 2017-03-09 profile is the only one currently available and is for use in
@@ -226,8 +226,8 @@ As an example, to automatically use the most recent Compute APIs, use one of
 the following imports:
 
 ```go
-import "github.com/Azure/azure-sdk-for-go/profiles/latest/compute/mgmt/compute"
-import "github.com/Azure/azure-sdk-for-go/profiles/preview/compute/mgmt/compute"
+import "github.com/sggms/azure-sdk-for-go/profiles/latest/compute/mgmt/compute"
+import "github.com/sggms/azure-sdk-for-go/profiles/preview/compute/mgmt/compute"
 ```
 
 ## Inspecting and Debugging

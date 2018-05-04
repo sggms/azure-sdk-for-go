@@ -19,7 +19,7 @@
 
 package timeseriesinsights
 
-import original "github.com/Azure/azure-sdk-for-go/services/preview/timeseriesinsights/mgmt/2017-02-28-preview/timeseriesinsights"
+import original "github.com/sggms/azure-sdk-for-go/services/preview/timeseriesinsights/mgmt/2017-02-28-preview/timeseriesinsights"
 
 type AccessPoliciesClient = original.AccessPoliciesClient
 

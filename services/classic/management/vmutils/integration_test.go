@@ -23,14 +23,14 @@ import (
 	"testing"
 	"time"
 
-	"github.com/Azure/azure-sdk-for-go/services/classic/management"
-	"github.com/Azure/azure-sdk-for-go/services/classic/management/hostedservice"
-	"github.com/Azure/azure-sdk-for-go/services/classic/management/location"
-	"github.com/Azure/azure-sdk-for-go/services/classic/management/osimage"
-	storage "github.com/Azure/azure-sdk-for-go/services/classic/management/storageservice"
-	"github.com/Azure/azure-sdk-for-go/services/classic/management/testutils"
-	vm "github.com/Azure/azure-sdk-for-go/services/classic/management/virtualmachine"
-	vmimage "github.com/Azure/azure-sdk-for-go/services/classic/management/virtualmachineimage"
+	"github.com/sggms/azure-sdk-for-go/services/classic/management"
+	"github.com/sggms/azure-sdk-for-go/services/classic/management/hostedservice"
+	"github.com/sggms/azure-sdk-for-go/services/classic/management/location"
+	"github.com/sggms/azure-sdk-for-go/services/classic/management/osimage"
+	storage "github.com/sggms/azure-sdk-for-go/services/classic/management/storageservice"
+	"github.com/sggms/azure-sdk-for-go/services/classic/management/testutils"
+	vm "github.com/sggms/azure-sdk-for-go/services/classic/management/virtualmachine"
+	vmimage "github.com/sggms/azure-sdk-for-go/services/classic/management/virtualmachineimage"
 )
 
 func TestDeployPlatformImage(t *testing.T) {

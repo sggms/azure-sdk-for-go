@@ -19,7 +19,7 @@
 
 package mysql
 
-import original "github.com/Azure/azure-sdk-for-go/services/mysql/mgmt/2017-12-01/mysql"
+import original "github.com/sggms/azure-sdk-for-go/services/mysql/mgmt/2017-12-01/mysql"
 
 type CheckNameAvailabilityClient = original.CheckNameAvailabilityClient
 

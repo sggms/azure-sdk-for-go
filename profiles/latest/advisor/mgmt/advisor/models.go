@@ -19,7 +19,7 @@
 
 package advisor
 
-import original "github.com/Azure/azure-sdk-for-go/services/advisor/mgmt/2017-04-19/advisor"
+import original "github.com/sggms/azure-sdk-for-go/services/advisor/mgmt/2017-04-19/advisor"
 
 const (
 	DefaultBaseURI = original.DefaultBaseURI

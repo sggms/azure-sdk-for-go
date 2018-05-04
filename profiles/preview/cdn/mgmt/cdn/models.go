@@ -19,7 +19,7 @@
 
 package cdn
 
-import original "github.com/Azure/azure-sdk-for-go/services/cdn/mgmt/2017-10-12/cdn"
+import original "github.com/sggms/azure-sdk-for-go/services/cdn/mgmt/2017-10-12/cdn"
 
 const (
 	DefaultBaseURI = original.DefaultBaseURI

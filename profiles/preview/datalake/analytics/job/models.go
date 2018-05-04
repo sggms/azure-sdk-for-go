@@ -19,7 +19,7 @@
 
 package job
 
-import original "github.com/Azure/azure-sdk-for-go/services/datalake/analytics/2017-09-01-preview/job"
+import original "github.com/sggms/azure-sdk-for-go/services/datalake/analytics/2017-09-01-preview/job"
 
 const (
 	DefaultAdlaJobDNSSuffix = original.DefaultAdlaJobDNSSuffix

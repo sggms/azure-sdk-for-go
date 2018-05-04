@@ -19,7 +19,7 @@
 
 package eventgrid
 
-import original "github.com/Azure/azure-sdk-for-go/services/preview/eventgrid/mgmt/2018-05-01-preview/eventgrid"
+import original "github.com/sggms/azure-sdk-for-go/services/preview/eventgrid/mgmt/2018-05-01-preview/eventgrid"
 
 const (
 	DefaultBaseURI = original.DefaultBaseURI

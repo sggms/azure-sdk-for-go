@@ -19,7 +19,7 @@
 
 package containerregistry
 
-import original "github.com/Azure/azure-sdk-for-go/services/preview/containerregistry/mgmt/2018-02-01/containerregistry"
+import original "github.com/sggms/azure-sdk-for-go/services/preview/containerregistry/mgmt/2018-02-01/containerregistry"
 
 type BuildsClient = original.BuildsClient
 type BuildStepsClient = original.BuildStepsClient

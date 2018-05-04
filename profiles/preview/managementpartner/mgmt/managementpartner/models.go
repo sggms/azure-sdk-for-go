@@ -19,7 +19,7 @@
 
 package managementpartner
 
-import original "github.com/Azure/azure-sdk-for-go/services/managementpartner/mgmt/2018-02-01/managementpartner"
+import original "github.com/sggms/azure-sdk-for-go/services/managementpartner/mgmt/2018-02-01/managementpartner"
 
 const (
 	DefaultBaseURI = original.DefaultBaseURI

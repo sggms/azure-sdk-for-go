@@ -19,7 +19,7 @@
 
 package powerbiembedded
 
-import original "github.com/Azure/azure-sdk-for-go/services/powerbiembedded/mgmt/2016-01-29/powerbiembedded"
+import original "github.com/sggms/azure-sdk-for-go/services/powerbiembedded/mgmt/2016-01-29/powerbiembedded"
 
 const (
 	DefaultBaseURI = original.DefaultBaseURI

@@ -19,7 +19,7 @@
 
 package containerinstance
 
-import original "github.com/Azure/azure-sdk-for-go/services/preview/containerinstance/mgmt/2018-02-01-preview/containerinstance"
+import original "github.com/sggms/azure-sdk-for-go/services/preview/containerinstance/mgmt/2018-02-01-preview/containerinstance"
 
 const (
 	DefaultBaseURI = original.DefaultBaseURI

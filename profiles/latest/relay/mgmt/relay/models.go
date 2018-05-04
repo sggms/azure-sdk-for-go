@@ -19,7 +19,7 @@
 
 package relay
 
-import original "github.com/Azure/azure-sdk-for-go/services/relay/mgmt/2017-04-01/relay"
+import original "github.com/sggms/azure-sdk-for-go/services/relay/mgmt/2017-04-01/relay"
 
 const (
 	DefaultBaseURI = original.DefaultBaseURI

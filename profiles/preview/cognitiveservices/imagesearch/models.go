@@ -19,7 +19,7 @@
 
 package imagesearch
 
-import original "github.com/Azure/azure-sdk-for-go/services/cognitiveservices/v1.0/imagesearch"
+import original "github.com/sggms/azure-sdk-for-go/services/cognitiveservices/v1.0/imagesearch"
 
 const (
 	DefaultBaseURI = original.DefaultBaseURI

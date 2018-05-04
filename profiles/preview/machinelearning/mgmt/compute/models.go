@@ -19,7 +19,7 @@
 
 package compute
 
-import original "github.com/Azure/azure-sdk-for-go/services/machinelearning/mgmt/2017-08-01-preview/compute"
+import original "github.com/sggms/azure-sdk-for-go/services/machinelearning/mgmt/2017-08-01-preview/compute"
 
 const (
 	DefaultBaseURI = original.DefaultBaseURI

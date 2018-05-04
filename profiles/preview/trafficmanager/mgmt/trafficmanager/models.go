@@ -19,7 +19,7 @@
 
 package trafficmanager
 
-import original "github.com/Azure/azure-sdk-for-go/services/trafficmanager/mgmt/2017-09-01-preview/trafficmanager"
+import original "github.com/sggms/azure-sdk-for-go/services/trafficmanager/mgmt/2017-09-01-preview/trafficmanager"
 
 const (
 	DefaultBaseURI = original.DefaultBaseURI

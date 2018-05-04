@@ -19,7 +19,7 @@
 
 package eventhub
 
-import original "github.com/Azure/azure-sdk-for-go/services/eventhub/mgmt/2017-04-01/eventhub"
+import original "github.com/sggms/azure-sdk-for-go/services/eventhub/mgmt/2017-04-01/eventhub"
 
 const (
 	DefaultBaseURI = original.DefaultBaseURI

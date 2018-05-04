@@ -19,7 +19,7 @@
 
 package reservations
 
-import original "github.com/Azure/azure-sdk-for-go/services/reservations/mgmt/2017-11-01/reservations"
+import original "github.com/sggms/azure-sdk-for-go/services/reservations/mgmt/2017-11-01/reservations"
 
 const (
 	DefaultBaseURI = original.DefaultBaseURI

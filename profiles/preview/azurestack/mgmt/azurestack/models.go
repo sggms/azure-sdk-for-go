@@ -19,7 +19,7 @@
 
 package azurestack
 
-import original "github.com/Azure/azure-sdk-for-go/services/azurestack/mgmt/2017-06-01/azurestack"
+import original "github.com/sggms/azure-sdk-for-go/services/azurestack/mgmt/2017-06-01/azurestack"
 
 const (
 	DefaultBaseURI = original.DefaultBaseURI

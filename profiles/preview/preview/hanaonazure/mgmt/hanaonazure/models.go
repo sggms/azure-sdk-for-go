@@ -19,7 +19,7 @@
 
 package hanaonazure
 
-import original "github.com/Azure/azure-sdk-for-go/services/preview/hanaonazure/mgmt/2017-11-03-preview/hanaonazure"
+import original "github.com/sggms/azure-sdk-for-go/services/preview/hanaonazure/mgmt/2017-11-03-preview/hanaonazure"
 
 const (
 	DefaultBaseURI = original.DefaultBaseURI

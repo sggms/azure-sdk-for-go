@@ -19,7 +19,7 @@
 
 package operationsmanagement
 
-import original "github.com/Azure/azure-sdk-for-go/services/preview/operationsmanagement/mgmt/2015-11-01-preview/operationsmanagement"
+import original "github.com/sggms/azure-sdk-for-go/services/preview/operationsmanagement/mgmt/2015-11-01-preview/operationsmanagement"
 
 const (
 	DefaultBaseURI = original.DefaultBaseURI

@@ -19,7 +19,7 @@
 
 package policy
 
-import original "github.com/Azure/azure-sdk-for-go/services/preview/resources/mgmt/2017-06-01-preview/policy"
+import original "github.com/sggms/azure-sdk-for-go/services/preview/resources/mgmt/2017-06-01-preview/policy"
 
 type AssignmentsClient = original.AssignmentsClient
 

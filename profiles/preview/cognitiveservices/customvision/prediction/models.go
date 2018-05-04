@@ -19,7 +19,7 @@
 
 package prediction
 
-import original "github.com/Azure/azure-sdk-for-go/services/cognitiveservices/v1.1/customvision/prediction"
+import original "github.com/sggms/azure-sdk-for-go/services/cognitiveservices/v1.1/customvision/prediction"
 
 const (
 	DefaultBaseURI = original.DefaultBaseURI
